@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "check": "concurrently \"format:check\" \"lint\"",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -24,6 +25,7 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "concurrently": "^8.0.1",
     "prettier": "^2.8.7"
   }
 }
