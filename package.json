@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "check": "concurrently \"format:check\" \"lint\"",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format:check": "prettier --check --ignore-path .gitignore .",
+    "format:write": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
     "@types/node": "18.15.11",
@@ -20,5 +23,9 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "prettier": "^2.8.7"
   }
 }
