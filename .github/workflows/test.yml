@@ -34,11 +34,14 @@ jobs:
       - name: Check
         run: yarn check
 
-      # - name: Test
-      #   run: yarn test
-
       - name: Build
         run: yarn build
+
+      - name: E2E Test
+        uses: cypress-io/github-action@v5
+        with:
+          build: yarn build
+          start: yarn start
 
       - name: Upload coverage to Codecov
         if: matrix.node-version == '18.x'
