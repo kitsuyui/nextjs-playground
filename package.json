@@ -15,7 +15,7 @@
     "format:write": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@types/node": "18.16.7",
+    "@types/node": "18.16.8",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
