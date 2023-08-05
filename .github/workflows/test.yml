@@ -36,9 +36,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Check dependencies
-        run: pnpm check
-
       - name: Check all
         run: pnpm check-all
 
