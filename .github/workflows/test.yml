@@ -12,12 +12,17 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+
+      - uses: pnpm/action-setup@v2.4.0
+        with:
+          version: 8
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: yarn
-          cache-dependency-path: yarn.lock
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
 
       - name: Cache Next.js build
         uses: actions/cache@v3
@@ -29,19 +34,19 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
 
       - name: Install dependencies
-        run: yarn install
+        run: pnpm install
 
-      - name: Check
-        run: yarn check
+      - name: Check all
+        run: pnpm check-all
 
       - name: Build
-        run: yarn build
+        run: pnpm build
 
       - name: E2E Test
         uses: cypress-io/github-action@v5
         with:
-          build: yarn build
-          start: yarn start
+          build: pnpm build
+          start: pnpm start
 
       - name: Upload coverage to Codecov
         if: matrix.node-version == '18.x'
