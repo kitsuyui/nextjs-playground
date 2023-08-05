@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "check": "concurrently \"yarn:format:check\" \"yarn:lint\"",
+    "check-all": "concurrently \"pnpm:format:check\" \"pnpm:lint\"",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "concurrently \"yarn:test:e2e\"",
+    "test": "concurrently \"pnpm:test:e2e\"",
     "test:e2e": "cypress run",
-    "format": "concurrently \"yarn:format:write\"",
+    "format": "concurrently \"pnpm:format:write\"",
     "format:check": "prettier --check --ignore-path .gitignore .",
     "format:write": "prettier --write --ignore-path .gitignore ."
   },
