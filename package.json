@@ -30,6 +30,7 @@
   "devDependencies": {
     "concurrently": "^8.2.1",
     "cypress": "^13.3.1",
-    "prettier": "^3.0.3"
+    "prettier": "^3.0.3",
+    "typedoc": "^0.25.2"
   }
 }
