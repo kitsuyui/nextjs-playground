@@ -31,6 +31,6 @@
     "concurrently": "^8.2.2",
     "cypress": "^13.3.3",
     "prettier": "^3.0.3",
-    "typedoc": "^0.25.2"
+    "typedoc": "^0.25.3"
   }
 }
