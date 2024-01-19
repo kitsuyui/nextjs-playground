@@ -3,34 +3,27 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "check-all": "concurrently \"pnpm:format:check\" \"pnpm:lint\"",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "test": "concurrently \"pnpm:test:e2e\"",
-    "test:e2e": "cypress run",
-    "format": "concurrently \"pnpm:format:write\"",
-    "format:check": "prettier --check --ignore-path .gitignore --ignore-path .prettierignore .",
-    "format:write": "prettier --write --ignore-path .gitignore --ignore-path .prettierignore ."
+    "test": "cypress run",
+    "lint": "biome check .",
+    "format": "biome check --apply ."
   },
   "dependencies": {
-    "@types/node": "20.11.5",
-    "@types/react": "18.2.48",
-    "@types/react-dom": "18.2.18",
-    "autoprefixer": "10.4.16",
-    "eslint": "8.56.0",
-    "eslint-config-next": "14.1.0",
+    "autoprefixer": "10.4.17",
     "next": "14.1.0",
     "postcss": "8.4.33",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "5.3.3"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2",
+    "@types/node": "20.11.5",
+    "@types/react": "18.2.48",
+    "@types/react-dom": "18.2.18",
+    "@biomejs/biome": "^1.5.2",
     "cypress": "^13.6.3",
-    "prettier": "^3.2.4",
-    "typedoc": "^0.25.7"
+    "typedoc": "^0.25.7",
+    "typescript": "5.3.3"
   }
 }
