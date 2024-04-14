@@ -12,7 +12,7 @@
     "format": "biome check --apply ."
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.6.3",
+    "@biomejs/biome": "^1.6.4",
     "cypress": "^13.7.1",
     "turbo": "^1.13.2",
     "typescript": "5.4.3"
