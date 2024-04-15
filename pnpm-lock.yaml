@@ -12,7 +12,7 @@ importers:
         specifier: ^1.6.4
         version: 1.6.4
       cypress:
-        specifier: ^13.7.1
+        specifier: ^13.7.3
         version: 13.7.3
       turbo:
         specifier: ^1.13.2
