@@ -52,7 +52,7 @@ importers:
         specifier: 18.2.25
         version: 18.2.25
       typedoc:
-        specifier: ^0.25.12
+        specifier: ^0.25.13
         version: 0.25.13(typescript@5.4.5)
       typescript:
         specifier: 5.4.5
