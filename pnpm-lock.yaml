@@ -52,7 +52,7 @@ importers:
         specifier: 19.0.2
         version: 19.0.2(@types/react@19.0.2)
       typedoc:
-        specifier: ^0.27.5
+        specifier: ^0.27.6
         version: 0.27.6(typescript@5.7.2)
       typescript:
         specifier: 5.7.2
