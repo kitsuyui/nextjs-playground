@@ -48,6 +48,7 @@ jobs:
           build: pnpm build
           start: pnpm start
           working-directory: packages/simple
+          install: false  # already installed with `pnpm install -r`
 
       - name: Upload coverage to Codecov
         if: matrix.node-version == '20.x'
