@@ -42,13 +42,20 @@ jobs:
       - name: Build
         run: pnpm build
 
+      - name: Install cypress
+        uses: cypress-io/github-action@v5
+        with:
+          # not running tests here, just install
+          runTests: false
+          install: true
+
       - name: E2E Test
         uses: cypress-io/github-action@v5
         with:
           build: pnpm build
           start: pnpm start
           working-directory: packages/simple
-          install: false  # already installed with `pnpm install -r`
+          install: false  # already installed in the previous step
 
       - name: Upload coverage to Codecov
         if: matrix.node-version == '22.x'
