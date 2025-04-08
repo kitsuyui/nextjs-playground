@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "cypress": "^14.2.1",
+    "cypress": "^14.3.0",
     "turbo": "^2.5.0",
     "typescript": "5.8.3"
   },
