@@ -14,7 +14,7 @@
     "format": "biome check --write ."
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.2.0",
+    "@biomejs/biome": "^2.2.2",
     "cypress": "^15.0.0",
     "turbo": "^2.5.6",
     "typescript": "5.9.2"
