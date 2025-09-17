@@ -20,7 +20,7 @@
     "@types/node": "22.18.5",
     "@types/react": "19.1.13",
     "@types/react-dom": "19.1.9",
-    "typedoc": "^0.28.12",
+    "typedoc": "^0.28.13",
     "typescript": "5.9.2"
   }
 }
