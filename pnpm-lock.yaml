@@ -43,8 +43,8 @@ importers:
         specifier: ^2.2.5
         version: 2.2.5
       '@types/node':
-        specifier: 24.7.0
-        version: 24.7.0
+        specifier: 24.7.1
+        version: 24.7.1
       '@types/react':
         specifier: 19.2.2
         version: 19.2.2
@@ -324,8 +324,8 @@ packages:
   '@types/hast@3.0.4':
     resolution: {integrity: sha512-WPs+bbQw5aCj+x6laNGWLH3wviHtoCv/P3+otBhbOhJgG8qtpdAMlTCxLtsTWA7LH1Oh/bFCHsBn0TPS5m30EQ==}
 
-  '@types/node@24.7.0':
-    resolution: {integrity: sha512-IbKooQVqUBrlzWTi79E8Fw78l8k1RNtlDDNWsFZs7XonuQSJ8oNYfEeclhprUldXISRMLzBpILuKgPlIxm+/Yw==}
+  '@types/node@24.7.1':
+    resolution: {integrity: sha512-CmyhGZanP88uuC5GpWU9q+fI61j2SkhO3UGMUdfYRE6Bcy0ccyzn1Rqj9YAB/ZY4kOXmNf0ocah5GtphmLMP6Q==}
 
   '@types/react-dom@19.2.1':
     resolution: {integrity: sha512-/EEvYBdT3BflCWvTMO7YkYBHVE9Ci6XdqZciZANQgKpaiDRGOLIlRo91jbTNRQjgPFWVaRxcYc0luVNFitz57A==}
@@ -1417,7 +1417,7 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
 
-  '@types/node@24.7.0':
+  '@types/node@24.7.1':
     dependencies:
       undici-types: 7.14.0
 
@@ -1439,7 +1439,7 @@ snapshots:
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 24.7.0
+      '@types/node': 24.7.1
     optional: true
 
   aggregate-error@3.1.0:
