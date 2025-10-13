@@ -34,20 +34,15 @@ jobs:
             ${{ runner.os }}-nextjs-
 
       - name: Install dependencies
-        run: pnpm install -r
+        run: |
+          pnpm install -r
+          pnpm cypress install
 
       - name: Check all
         run: pnpm lint
 
       - name: Build
         run: pnpm build
-
-      - name: Install cypress
-        uses: cypress-io/github-action@v5
-        with:
-          # not running tests here, just install
-          runTests: false
-          install: true
 
       - name: E2E Test
         uses: cypress-io/github-action@v5
