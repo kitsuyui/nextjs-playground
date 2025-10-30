@@ -9,7 +9,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node-version: [18.x, 20.x, 22.x]
+        # https://nodejs.org/en/about/previous-releases
+        node-version: [20.x, 22.x, 24.x]
 
     steps:
       - uses: actions/checkout@v5
@@ -53,7 +54,8 @@ jobs:
           install: false  # already installed in the previous step
 
       - name: Upload coverage to Codecov
-        if: matrix.node-version == '22.x'
+        # https://nodejs.org/en/about/previous-releases
+        if: matrix.node-version == '24.x'
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
