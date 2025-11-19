@@ -46,11 +46,11 @@ importers:
         specifier: 24.10.1
         version: 24.10.1
       '@types/react':
-        specifier: 19.2.5
-        version: 19.2.5
+        specifier: 19.2.6
+        version: 19.2.6
       '@types/react-dom':
         specifier: 19.2.3
-        version: 19.2.3(@types/react@19.2.5)
+        version: 19.2.3(@types/react@19.2.6)
       typedoc:
         specifier: ^0.28.14
         version: 0.28.14(typescript@5.9.3)
@@ -343,8 +343,8 @@ packages:
     peerDependencies:
       '@types/react': ^19.2.0
 
-  '@types/react@19.2.5':
-    resolution: {integrity: sha512-keKxkZMqnDicuvFoJbzrhbtdLSPhj/rZThDlKWCDbgXmUg0rEUFtRssDXKYmtXluZlIqiC5VqkCgRwzuyLHKHw==}
+  '@types/react@19.2.6':
+    resolution: {integrity: sha512-p/jUvulfgU7oKtj6Xpk8cA2Y1xKTtICGpJYeJXz2YVO2UcvjQgeRMLDGfDeqeRW2Ta+0QNFwcc8X3GH8SxZz6w==}
 
   '@types/sinonjs__fake-timers@8.1.1':
     resolution: {integrity: sha512-0kSuKjAS0TrGLJ0M/+8MaFkGsQhZpB6pxOmvS3K8FYI72K//YmdfoW9X2qPsAKh1mkwxGD5zib9s1FIFed6E8g==}
@@ -1440,11 +1440,11 @@ snapshots:
     dependencies:
       undici-types: 7.16.0
 
-  '@types/react-dom@19.2.3(@types/react@19.2.5)':
+  '@types/react-dom@19.2.3(@types/react@19.2.6)':
     dependencies:
-      '@types/react': 19.2.5
+      '@types/react': 19.2.6
 
-  '@types/react@19.2.5':
+  '@types/react@19.2.6':
     dependencies:
       csstype: 3.2.2
 
